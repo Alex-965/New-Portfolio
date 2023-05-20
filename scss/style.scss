@@ -769,6 +769,21 @@ main {
             }
         }
     }
+
+    .form-container{
+        .link-list-items{
+            display: grid;
+            margin: 20px;
+        }
+    }
+}
+
+@media (max-width: 572px){
+    .form-container{
+        .title{
+            margin-bottom: 120px;
+        }
+    }
 }
 
 @media (max-width: 540px) {
@@ -819,11 +834,10 @@ main {
             }
         }
     }
-    
+
     .form-container{
-        .link-list-items{
-            display: grid;
-            margin: 20px;
+        .title{
+            margin-bottom: 20px;
         }
     }
 }

@@ -640,6 +640,15 @@ main .about .about_row .about-info p .high {
   .header-row .header-info h1 {
     font-size: 6rem;
   }
+  .form-container .link-list-items {
+    display: grid;
+    margin: 20px;
+  }
+}
+@media (max-width: 572px) {
+  .form-container .title {
+    margin-bottom: 120px;
+  }
 }
 @media (max-width: 540px) {
   h1,
@@ -668,9 +677,8 @@ main .about .about_row .about-info p .high {
     inset: -20px 10px 10px 10px;
     transform: translate(0px, 0px);
   }
-  .form-container .link-list-items {
-    display: grid;
-    margin: 20px;
+  .form-container .title {
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 468px) {
