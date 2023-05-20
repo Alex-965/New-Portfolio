@@ -675,7 +675,7 @@ main .about .about_row .about-info p .high {
 }
 @media (max-width: 468px) {
   body {
-    height: 980vh;
+    height: 1020vh;
   }
   main .about .about_row .about-info .img {
     width: 80%;
