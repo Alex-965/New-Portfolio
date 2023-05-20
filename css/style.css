@@ -674,8 +674,21 @@ main .about .about_row .about-info p .high {
   }
 }
 @media (max-width: 468px) {
+  body {
+    height: 980vh;
+  }
+  main .about .about_row .about-info .img {
+    width: 80%;
+    height: 400px;
+  }
   .form-container .title {
     margin-bottom: 100px;
+  }
+  .skills .skills_row h2::after {
+    display: none;
+    font-size: 6.5rem;
+    inset: -20px 10px 10px 10px;
+    transform: translate(0px, 0px);
   }
 }
 @media (max-width: 468px) {
