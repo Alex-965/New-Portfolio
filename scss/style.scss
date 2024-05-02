@@ -84,10 +84,9 @@ body {
 
     .header-list-items {
         display: flex;
-        padding: 20px 20px 20px 20px;
+        padding: 20px;
         justify-content: space-evenly;
         gap: 50px;
-
         text-transform: uppercase;
 
         .header-list-item {
@@ -493,9 +492,12 @@ main {
 
             .project-list-item {
                 .img {
-                    width: 100%;
-                    background: white;
+                    width: auto;
                     height: 250px;
+                    max-width: 100%;
+                    object-fit: contain;
+                    background: white;
+
                 }
 
                 .projects-item-info {
@@ -728,7 +730,14 @@ main {
 
     .header {
         .header-nav {
-            gap: 20px;
+            .container{
+                width: 100%;
+                margin: 0 ;
+                .header-list-items{
+                    justify-content: start;
+                    gap: 50px;
+                }
+            }
         }
     }
 
@@ -762,6 +771,7 @@ main {
 }
 
 @media (max-width: 640px) {
+
     .header-row {
         .header-info {
             h1 {
@@ -815,6 +825,9 @@ main {
     .header {
         .header-nav {
             display: none;
+            .container{
+                display: none;
+            }
             .header-list-items {
                 .header-list-item {
                     font-size: 1.1rem;

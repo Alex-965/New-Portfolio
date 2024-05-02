@@ -81,7 +81,7 @@ body {
 }
 .header .header-list-items {
   display: flex;
-  padding: 20px 20px 20px 20px;
+  padding: 20px;
   justify-content: space-evenly;
   gap: 50px;
   text-transform: uppercase;
@@ -419,9 +419,12 @@ main .about .about_row .about-info p .high {
   grid: repeat(2, 1fr)/repeat(3, 1fr);
 }
 .project .project_row .project-list-items .project-list-item .img {
-  width: 100%;
-  background: white;
+  width: auto;
   height: 250px;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background: white;
 }
 .project .project_row .project-list-items .project-list-item .projects-item-info {
   display: flex;
@@ -618,8 +621,13 @@ main .about .about_row .about-info p .high {
   body {
     height: 910vh;
   }
-  .header .header-nav {
-    gap: 20px;
+  .header .header-nav .container {
+    width: 100%;
+    margin: 0;
+  }
+  .header .header-nav .container .header-list-items {
+    justify-content: start;
+    gap: 50px;
   }
   .header-row .header-info h1 {
     font-size: 7rem;
@@ -667,6 +675,9 @@ main .about .about_row .about-info p .high {
     font-size: 5rem !important;
   }
   .header .header-nav {
+    display: none;
+  }
+  .header .header-nav .container {
     display: none;
   }
   .header .header-nav .header-list-items .header-list-item {
